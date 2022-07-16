@@ -8,10 +8,10 @@ const schoolScheme = new mongoose.Schema({
   // parent referenc bolib ulandi school bn district
   districtId: {
     type: mongoose.Schema.ObjectId,
-    ref: "district",
+    ref: "districts",
   },
 });
 
-const School = mongoose.model("school", schoolScheme);
+const School = mongoose.model("schools", schoolScheme);
 
 module.exports = School;

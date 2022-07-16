@@ -16,13 +16,13 @@ const countryScheme = new mongoose.Schema({
         // child referencing usuli viloyat bilan tuman ulanishi
         {
           type: mongoose.Schema.ObjectId, // bu nima orqali ulanyotgaani
-          ref: "district", //shu idni qaysi collectionda turganini korsatishi
+          ref: "districts", //shu idni qaysi collectionda turganini korsatishi
         },
       ],
     },
   ],
 });
 
-const Country = mongoose.model("country", countryScheme);
+const Country = mongoose.model("countries", countryScheme);
 
 module.exports = Country;

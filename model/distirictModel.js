@@ -7,7 +7,7 @@ const districtScheme = new mongoose.Schema({
   },
 });
 
-const District = mongoose.model("district", districtScheme);
+const District = mongoose.model("districts", districtScheme);
 
 module.exports = District;
 

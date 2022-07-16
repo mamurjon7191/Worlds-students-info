@@ -7,10 +7,10 @@ const groupSchema = new mongoose.Schema({
   },
   schoolId: {
     type: mongoose.Schema.ObjectId,
-    ref: "school",
+    ref: "schools",
   },
 });
 
-const Group = mongoose.model("group", groupSchema);
+const Group = mongoose.model("groups", groupSchema);
 
-module.exports = groupSchema;
+module.exports = Group;
